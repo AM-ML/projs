@@ -2,13 +2,14 @@ rm();
 listen();
 
 document.addEventListener("DOMContentLoaded", function(){
-    document.querySelector(".click").click();
     closeNav();
-
-
-
-    if(!localStorage.getItem("email")){
+    
+    
+    
+    if(!localStorage.getItem("username")){
         document.querySelector(".openLoginForm").click();
+    } else {
+        document.querySelector(".click").click();
     }
 })
 function openNav() {

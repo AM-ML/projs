@@ -38,6 +38,10 @@ section {
 	margin-left: 7vmax;
 }
 
+* {
+	overflow: visible;
+}
+
 /* Style for the side navbar */
 .sidenav {
     top: 0;

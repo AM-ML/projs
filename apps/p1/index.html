@@ -92,7 +92,7 @@
       <div class="unimportant">
         <a href="mailto:softengineer@outlook.com">Contact Us</a>
         <small>&nbsp;|&nbsp;</small>
-        <a href="#" onclick="">Logout</a>
+        <a href="#" onclick="localStorage.removeItem('username');document.querySelector('.openLoginForm').click();">Logout</a>
       </div>
       <div class="unimportant">
         <a href="#" class="sm">Copyright&copy;AM 2022</a>
@@ -241,7 +241,38 @@
         </div>
       </form>
     </div>
-    <section id="home"></section>
+    <section id="home">
+		<div class="container mt-3 d-block m-auto text-center">
+			<div class="row align-items-center">
+				<div class="col-4">
+					<input type="text" placeholder="Search" name="search" id="search" autocomplete="off" class="shadow rounded-pill form-control">
+				</div>
+				<div class="col-6 text-end">
+					<h1>View Students</h1>
+				</div>
+			</div>
+			<div class="container">
+				<div class="container row mt-3 py-2">
+					<div class="col-2 border-top border-start border-dark text-center bg-warning text-light border-bottom border-end pe-2">Name :</div>
+					<div class="col-8  text-start border-top border-dark border-bottom">Abcdefg</div>
+					<div class="col-2 bg-warning text-end border-top border-end border-dark text-light">123-456-789 M</div>
+					<div class="col-2 border-start border-dark  text-center bg-warning text-light border-bottom border-end pe-2">Payed :</div>
+					<div class="col-10 border-end border-dark text-start border-bottom">$ 12,456.0</div>
+					<div class="col-2 border-start border-bottom border-dark  text-center bg-warning text-light border-end pe-2">Fees &nbsp;&nbsp;:</div>
+					<div class="col-10 border-bottom border-end border-dark text-start">$ 42,340.0</div>
+				</div>
+				<div class="container row mt-3 py-2">
+					<div class="col-1 border-top border-start border-dark text-start">Name:</div>
+					<div class="col-9  text-start border-top border-dark">Abcdefg</div>
+					<div class="col-2 bg-warning text-end border-top border-end border-dark">123-456-789 M</div>
+					<div class="col-1 border-start border-dark  text-start">Payment:</div>
+					<div class="col-11 border-end border-dark text-start">$ 12,456.0</div>
+					<div class="col-1 border-start border-bottom border-dark  text-start">Fees:</div>
+					<div class="col-11 border-bottom border-end border-dark text-start">$ 42,340.0</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
     <section id="about">About</section>
 
@@ -251,6 +282,8 @@
     ></script>
     <script src="../includes/nav.js"></script>
     <script src="../includes/fade.js"></script>
+	<script src="encrypt.js"></script>
+	<script src="decrypt.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
