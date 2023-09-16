@@ -1,0 +1,65 @@
+/* TEMPLATE */
+/* @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap'); */
+*{
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	color: #0F0F0F;
+	position: relative;
+	font-family: sans-serif;
+	background-color: #F1F1F1;
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+/* TEMPLATE */
+
+p {
+	margin: 1rem;
+	padding: 2rem;
+	text-indent: 2em;
+	border-radius: 20px;
+	border: 1px solid lightgray;
+	box-shadow: 4px 4px 1px lightgray;
+}
+
+
+
+.wrapper {
+	top:0;
+	left:0;
+	float:left;	
+	height:30vw;
+	margin: 0.5em;
+	max-width: 30vw;
+	user-select: none;
+	position:absolute;
+	position: absolute;
+	min-width:max-content;
+}
+
+.container {
+	padding: 1rem;
+	border-radius: 10px;
+	background-color: rgba(128, 128, 128, 0.354);
+	margin-top: -30vw !important;
+	box-shadow: 5px 5px 15px black;
+}
+
+.ct {
+	visibility: visible;
+
+}
+
+.container h1 {
+	color: #F0F0F0;
+}
+
+.content p:first-child {
+	margin-top: 30vw;
+}

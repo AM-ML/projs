@@ -1,0 +1,10 @@
+.main, .header, .main * {
+      color: #fff;
+      text-shadow: 1px 1px 1px #fff
+}
+
+.main {
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+}

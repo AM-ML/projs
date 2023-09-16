@@ -1,0 +1,68 @@
+/* TEMPLATE */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*, *::before, *::after{
+	box-sizing: border-box;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+body{
+	zoom: 6;
+	color: #fff;
+	background-color: #344;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin: 10px auto;
+
+}
+.center{
+	text-align: center;
+}
+/* TEMPLATE */
+
+.flip-card {
+	display: inline-flex;
+	flex-direction: column;
+	box-shadow: 0 2px 5px 0 rgba(calc(255/33), calc(255/33), calc(255/33), 0.3);
+}
+
+.top {
+	filter: brightness(0.8);
+}
+
+.bottom {
+	display: flex;
+	align-items: flex-end;
+	filter: brightness(1);
+	margin-top: .02rem;
+}
+
+.top, .bottom {
+	overflow: hidden;
+	line-height: calc(1em + (1em / 3));
+	height: 1em;
+	padding: calc(1em / 3);
+	font-size: 2rem;
+	background-color: #3334;
+	border-radius: 2px;
+}
+
+.half {
+	zoom: 0.5;
+}
+
+.dons {
+	/* margin-right: -2rem; */
+	margin-left: 1rem;
+}
+
+.clear {
+	clear:both;
+}
+.tell {
+	zoom: 0.3;
+	/* margin: 0; */
+	width: 4rem;
+}
+
+

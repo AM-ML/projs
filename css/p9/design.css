@@ -1,0 +1,179 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	user-select: none;
+	text-align: center;
+	background-color: #F1F1F1;
+	font-family: "Segoe UI Emoji", sans-serif;
+}
+
+.block{
+	display: block;
+}
+
+.center{
+	text-align: center;
+}
+
+img {
+	margin-bottom: -16px;
+}
+
+nav h1 {
+	padding: 0;
+	margin: 20px;
+	color: #333;
+	display: inline;
+	line-height: 2.5;
+	margin-bottom: 26px;
+}
+
+nav {
+	display: flex;
+	text-align: center !important;
+	flex-direction: row;
+	border-radius: 30px;
+	align-items: center;
+	width: 100%;
+	background-color: #fff;
+	align-content: space-evenly;
+	background-color: rgb(255, 217, 2);
+}
+
+nav li {
+	width: max-content;
+	display: inline;
+	align-items: center;
+	text-align: center;
+}
+
+li a, li a:visited {
+	color: #333;
+	list-style: none;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+
+li a:focus, li a:active, li a:hover {
+	color: #333d !important;
+}
+
+.containers{
+	display: block;
+	margin: 10px;
+}
+
+
+
+
+.container {
+	text-align: center;
+	margin: 20px;
+}
+
+.menu-section-title {
+	background: gold;
+	line-height: 4rem;
+	margin-bottom: 20px;
+	border-radius: 2rem 2rem 0 0;
+}
+
+.menu-section {
+	text-align: center;
+	max-width: 500px;
+	user-select: none;
+	background: #ffffff;
+	border: 0.5px solid gray;
+	border-radius: 2rem 2rem 2rem 2rem;
+}
+
+.menu-section-list {
+	list-style: none;
+	text-align: start;
+}
+
+.menu-section-list li {
+	/* margin: 1em; */
+	padding: 1.2em;
+	border-top: 0.5px ridge gray;
+	font-family:  tahoma;
+}
+
+.menu-section-list code {
+	display: block;
+	text-align: end;
+	margin-top: -1rem;
+	font-size: 0.85rem;
+}
+
+.menu-section-list li:hover {
+	color: whitesmoke;
+	background-color: #333;
+}
+
+.menu-section-list li:last-child:hover {
+	border-radius: 0 0 2rem 2rem;
+}
+.about-section-info p {
+	margin-top: 20px;
+	line-height: 1.45;
+	font-size: medium;
+	text-align: start;
+	font-weight: medium;
+	letter-spacing: -0.5px;
+	font-family: sans-serif;
+	zoom: 0.8;
+}
+.about-section-info, .about-section-info p{
+	border-radius: 0 0 2rem 2rem;
+	color: #333 !important;
+	background-color: #F0F0F0 !important;
+}
+
+
+span {
+	font-size: 0.70rem;
+	color: black !important;
+}
+
+span a {
+	font-family: sans-serif !important;
+	text-decoration: underline !important;
+	color: #14f !important;
+}
+
+span a:focus,
+span a:hover, 
+span:active {
+	color:#18f !important;
+}
+
+
+small {
+	font-size: 0.6rem;
+	display: block;
+}
+
+
+footer {
+	height: 20vh;
+	display: flex;
+	text-align: center;
+	flex-direction: column-reverse;
+}
+
+
+body {
+	zoom: 1.8;
+}
+
+
+.container {
+	display: block;
+	margin: 10px auto;
+}

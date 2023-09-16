@@ -1,0 +1,45 @@
+/* TEMPLATE */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+* {
+	box-sizing: border-box;
+	padding: 0px;
+}
+
+body {
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+	font-family: "League Spartan", "Segoe UI Emoji", sans-serif;
+}
+
+.block {
+	display: block;
+}
+
+.center {
+	text-align: center;
+}
+/* TEMPLATE */
+
+details {
+	margin-top: 15px;
+}
+
+details p {
+	text-indent: 20px;
+}
+
+details summary {
+	user-select: none;
+}
+
+mark {
+	padding: 5px;
+	color: #000000;
+	border-radius: 10px;
+	background-color: #0f9;
+}
+
+strong i {
+	margin-left: 40px;
+	line-height: 1.7;
+}

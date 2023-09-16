@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Hans McMurdy" />
+    <title>AMC</title>
+    <meta name="title" content="#JavaScriptFirst" />
+    <meta
+      name="description"
+      content="Learn how to code with #JavaScriptFirst: https://github.com/HansUXdev/JavaScript-First"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="canonical"
+      href="https://v5.getbootstrap.com/docs/5.0/examples/navbar-bottom/"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../src/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../src/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../src/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../src/site.webmanifest" />
+
+    <link rel="stylesheet" href="design.css" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      main {
+        margin-top: 8rem;
+      }
+
+      .navbar-logo {
+        margin-right: 1rem;
+      }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img
+          src="../src/android-chrome-512x512.png"
+          width="48"
+          class="navbar-logo"
+        />
+        <a class="navbar-brand" href="#">AMCollege</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#" value="#view">
+                View
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" value="#insert"> Insert </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" value="#update">Update</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" value="#delete">Delete</a>
+            </li>
+            <li class="nav-item dropdown ms-auto">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown10"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                >More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                <li>
+                  <a class="dropdown-item" href="#" value="#about">About</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" value="#">Learn More</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section id="view">
+        <div class="container view-sec-headers">
+          <div class="view-sec-search input-group">
+            <div class="form-outline">
+              <input
+                type="search"
+                id="form1"
+                class="view-sec-input form-control"
+                oninput="loadBlogs()"
+                autocomplete="off"
+                autofocus
+                placeholder="Search..."
+              />
+
+              <div class="form-notch">
+                <div class="form-notch-leading" style="width: 9px"></div>
+                <div class="form-notch-middle" style="width: 47.2px"></div>
+                <div class="form-notch-trailing"></div>
+              </div>
+            </div>
+            <button onclick="loadBlogs()"  type="button" class="view-btn btn btn-primary" style>
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <h1 class="view-sec-title center">View Blogs</h1>
+        </div>
+        <div class="container blogs-holder">
+	</div>
+      </section>
+
+      <!-- VIEW SECTION -->
+
+      <section id="insert">
+        <div class="wrapper">
+		<h1 class="insert-header center">Insert Blog</h1>
+          <form class="insert-form form shadow-lg">
+            <textarea
+              type="text"
+              placeholder="Blog Title"
+              class="form-input form-control insert-title" 
+		  spellcheck="false"
+		  autofocus required
+            ></textarea>
+
+		<textarea cols="30" rows="10" placeholder="Blog Body" class="form-input form-control insert-body"
+		spellcheck="false"
+		></textarea>
+		<input type="search" class="ms-auto form-input form-control insert-author" autocomplete="off" autofocus placeholder="Blog Author" spellcheck="false" required>
+
+		<button type="submit" class="btn btn-lg rounded btn-dark insert-submit">
+			Submit
+		</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- INSERT BLOG SECTION -->
+
+      <section id="update">
+		<div class="container update-search-container">
+			<div class="form-outline">
+				<input
+				  type="search"
+				  id="form1"
+				  class="update-sec-input usi form-control"
+				  oninput="loadSelect()"
+				  autocomplete="off"
+				  autofocus
+				  placeholder="Search..."
+				/>
+	    
+				<div class="form-notch">
+				  <div class="form-notch-leading" style="width: 9px"></div>
+				  <div class="form-notch-middle" style="width: 47.2px"></div>
+				  <div class="form-notch-trailing"></div>
+				</div>
+			    </div>
+			    <button onclick="loadSelect()" type="button" class="update-search-btn btn btn-primary" style>
+				<i class="fas fa-search"></i>
+			    </button>
+		</div>
+		<div class="container">
+			<div class="container update-container"></div>
+		</div>
+	</section>
+	
+      <!-- UPDATE BLOG SECTION -->
+
+      <section id="delete">
+		<div class="del-heading container">
+			<div class="del-search">
+				<div class="form-outline">
+					<input
+					  type="search"
+					  id="form1"
+					  class="update-sec-input usi form-control del-input"
+					  oninput="loadDelete()"
+					  autocomplete="off"
+					  autofocus
+					  placeholder="Search..."
+					/>
+		    
+					<div class="form-notch">
+					  <div class="form-notch-leading" style="width: 9px"></div>
+					  <div class="form-notch-middle" style="width: 47.2px"></div>
+					  <div class="form-notch-trailing"></div>
+					</div>
+				    </div>
+				    <button onclick="loadDelete()" type="button" class="del-search-btn btn btn-primary" style>
+					<i class="fas fa-search"></i>
+				    </button>
+				</div>
+				<h1 class="center del-header">Delete Blog</h1>
+			</div>
+		</div>
+		<div class="container del-holder">
+			
+		</div>
+	</section>
+
+      <!-- DELETE BLOG SECTION -->
+
+      <section id="about" class="shadow-lg container">
+        <p class="about-par">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quia ut
+          illo officiis assumenda explicabo ducimus animi nulla facilis! Beatae
+          illo distinctio consequatur corrupti consectetur, soluta dolore
+          laboriosam totam libero tempore quidem tempora molestiae veniam odio.
+          Aliquam deleniti fugit iure, itaque dolorum repellendus, consequuntur
+          asperiores dolor, error illo temporibus quod expedita culpa repellat
+          necessitatibus nam suscipit soluta! Recusandae, accusantium. Obcaecati
+          eum sit soluta maxime iure at velit culpa! Vero repudiandae laudantium
+          autem nesciunt ducimus reprehenderit, laboriosam numquam. Minus,
+          quaerat iste.
+        </p>
+        <p class="about-par">
+          Ipsum, dolores, molestias dolore iste delectus quas ipsam incidunt
+          soluta modi mollitia quibusdam maiores aspernatur reiciendis quod quia
+          dicta illo non. Temporibus optio dolorem officia, repudiandae
+          praesentium maiores aliquam nulla ipsa, voluptatem nostrum nam cumque
+          eligendi ex, suscipit tempora vero veniam culpa quasi id. Fugiat
+          libero expedita nobis, ab vero ratione maxime eos itaque rem animi
+          tempore sequi unde consequatur dicta accusantium blanditiis magni
+          officia odio, optio perferendis, quisquam reiciendis doloremque?
+          Repudiandae quam nostrum eveniet sit, perspiciatis dolorum quae sequi.
+        </p>
+        <p class="about-par">
+          Atque magnam nulla necessitatibus? Accusantium tenetur odio nam nemo
+          maiores sed. Quod vero porro possimus explicabo, neque beatae officia
+          dolorem eius praesentium perspiciatis magni facilis unde deserunt et
+          saepe fugit at animi culpa, amet incidunt cumque. Aspernatur iure
+          libero amet magnam minus mollitia commodi, ipsam laboriosam ad dolor
+          ullam ab nesciunt quasi voluptate, fugit dolores! Obcaecati ad
+          deserunt facilis accusamus magni velit, dolorem odio dicta numquam
+          ipsam eum itaque impedit non voluptatem nihil, eaque iste debitis,
+          molestiae maxime corporis tempore.
+        </p>
+        <p class="about-par">
+          Vero officia obcaecati libero culpa mollitia, tempora sit asperiores
+          voluptates rem neque aliquid earum harum nisi eaque! Similique
+          corporis doloremque vel obcaecati alias molestias qui? Enim, molestiae
+          inventore. Maiores nostrum rem est laboriosam blanditiis beatae,
+          quisquam aspernatur quidem provident iste omnis eaque enim saepe
+          commodi velit magnam modi fuga sunt nisi ex quia nemo fugit. Sed et
+          velit dolore enim itaque, repudiandae quasi quis. Asperiores a nisi
+          modi ullam itaque nobis, autem voluptates. Accusantium ut dolor autem
+          accusamus quibusdam cupiditate!
+        </p>
+        <p class="about-par">
+          Ab, esse dolores reprehenderit sequi neque asperiores assumenda
+          praesentium adipisci dolorum ex, totam non! Facilis iure repellendus
+          iste ratione ullam eum nihil aspernatur sint nisi, ipsum perspiciatis
+          incidunt voluptatem quos dolore est. Atque recusandae, animi libero
+          quae magni expedita amet rem natus est error. Nam ipsam quasi, iste
+          sed iusto sapiente, mollitia aspernatur officiis odio, esse eligendi
+          excepturi saepe et nisi quis culpa. Eaque labore consequatur culpa,
+          inventore esse minima nostrum quo corrupti beatae. Rem beatae
+          praesentium veritatis optio dolore.
+        </p>
+      </section>
+
+      <!-- ABOUT SECTION -->
+    </main>
+
+    <script src="../includes/nav.js"></script>
+    <script src="view.js"></script>
+    <script src="insert.js"></script>
+    <script src="update.js"></script>
+    <script src="delete.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/29d3732e2d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

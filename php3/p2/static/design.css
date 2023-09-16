@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+body {
+font-family: Quicksand;
+}
+.container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+align-items: center;
+justify-items: center;
+}
+.movie {
+text-align: center;
+max-width: 300px;
+background: linear-gradient(
+90deg,
+rgba(249, 211, 180, 1) 0%,
+rgba(249, 211, 180, 0) 100%
+);
+}
+h3 {
+text-align: center;
+}
+.search {
+width: 71%;
+margin: 4rem auto;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 1.5rem 1.75rem;
+border-radius: 3rem;
+background: #1f2123;
+-webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+}
+.search input {
+flex: 1;
+border: none;
+font-size: 1.5rem;
+font-weight: 500;
+padding-right: 1rem;
+outline: none;
+color: #a1a1a1;
+background:   #1f2123;
+}

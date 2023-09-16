@@ -1,0 +1,61 @@
+/* TEMPLATE */
+/* @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap'); */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+	font-family: "Segoe UI Emoji", sans-serif;
+}
+.news {
+	margin: 1rem;
+	border-radius: 5px;
+	background: lightgray;
+	border: 2px solid black;
+	max-width: 800px;
+	text-align: justify;
+
+}
+hr {
+	border-color: darkgray;
+}
+.block{
+	background: #18f;
+	display: block !important;
+	background-image: url('../img/fischer.png');
+	background-repeat: no-repeat;
+	width: 25vw;
+	background-size: 100% 100%;
+	height: 25vw;
+	padding: 0.67rem;
+	color: #fff;
+	text-align: center;
+	border: 1px solid black;
+	margin: 0.67rem;
+}
+p {
+	text-indent: 1em;
+	margin: 1rem;
+	padding: 0.5rem 1rem;
+	font-size: calc(1.5vw +4px);
+	letter-spacing: -0.02rem;
+	font-family: '';
+	font-weight: bolder;
+}
+.center{
+	text-align: center;
+}
+/* TEMPLATE */
+
+.left {
+	float:left;
+	margin-right: 1rem;
+}
+
+.right {
+	float:right;
+	margin-left: 1rem;
+}

@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 30px;
+}
+h1{
+	margin-left:-60px;
+}
+
+body {
+    backdrop-filter: blur(8px);
+    opacity: 0.9;
+	color: #F1F1F1;
+	font-family: "jetbrains mono";
+	background-image: url('imgs/stl.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+body * {
+	color: #F1F1F1;
+	background-color: rgba(10, 36, 53, 0.3);
+}
+.form-control{
+	display: inline;
+	width: 40%;
+	margin: 20px;
+}
+.block{
+	display: block;
+}
+.pass{
+	color: #f2f2f2;
+}
+.pass:hover{
+	color: #fff;
+}
+.link{
+	color: #E0E0E0;
+	background-color: rgba(10, 36, 53, 0.66);
+}
+.link:hover{
+	color: #FFF;
+}
+.template{
+	color: #E0E0E0;
+}
+.template:hover{
+	color: #FFF;
+}
+.full-template{
+	color: #E0E0E0;
+	background-color: rgba(10, 36, 53, 0.66);
+}
+.full-template:hover{
+	color: #FFF;
+}
+.sure{
+	width: 108%;
+}
+.ctable{
+	border-radius: 20px !important;
+	overflow: hidden;
+}

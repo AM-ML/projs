@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+
+.form-check-inline {
+	margin-left: -50%;
+}
+
+body {
+	font-family: 'League Spartan';
+}
+
+body .container {
+	width: 50%;
+	margin: 10px auto;
+}
+

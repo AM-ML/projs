@@ -1,0 +1,10 @@
+.list{
+	font-family: "Cascadia Code";
+	color:  rebeccapurple;
+	border: 0.5px solid black;
+	border-width: 2px;
+	padding: 4px;
+	display: inline-block;
+	width: 150px;
+	text-align: center;
+}

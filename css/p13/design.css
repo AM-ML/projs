@@ -1,0 +1,141 @@
+/* TEMPLATE */
+/* @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap'); */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	padding: 1rem;
+	margin: 1rem;
+	color: #0F0F0F;
+	max-width: 600px;
+	font-family: sans-serif;
+	border: 1px double black;
+	background-color: #F1F1F1;
+}
+.block{
+	width: 10em;
+	height: 10em;
+	border-radius: 5px;
+	background: aqua;
+	outline-offset: 2px;
+	border: 1px double #000;
+	outline: 2px double #002;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url('../img/fischer.png');
+}
+.left {
+	float: left;
+	margin-right: 1rem;
+}
+.right {
+	float:right;
+	margin-left: 1rem;
+}
+.center{
+	text-align: center;
+}
+/* TEMPLATE */
+
+p {
+	text-indent: 1em;
+	margin: 0.5rem;
+	padding: 1rem;
+}
+
+.clear {
+	clear: both !important;
+}
+
+hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-color: black;
+}
+
+
+body .block:last-child {
+	background-image: url('../img/arnold.png') !important;
+}
+
+.a {
+	background-image: url('../img/arnold.png');
+}
+.b {
+	background-image: url('../img/beachsm.jpg');
+}
+.c{
+	background-image: url('../img/einstein.png');
+}
+.d{
+	background-image: url('../img/kasparov.png');
+}
+.e{
+	background-image: url('../img/focus.jpg');
+}
+.f {
+	background-image: url('../img/AlKabeer.png');
+}
+.g {
+	background-image: url('../img/digitization-5140071.jpg');
+}
+.h {
+	background-image: url('../img/mountain.jpg');
+}
+.i {
+	background-image: url('../img/mob1.jpg');
+}
+small {
+	display: block;
+}
+
+.end {
+	text-align: end;
+}
+
+* {
+	user-select: none;
+}
+
+body *{
+	margin: 20px 0 20px 0;
+}
+body {
+	border-radius: 20px;
+	box-shadow: 9px 2px 7px black;
+	margin: 20px auto;
+	background: #AAAE !important;
+}
+html {
+	background: rgb(229, 63, 63);
+}
+
+p {
+	text-align: start;
+	word-spacing: 0.1em;
+	line-height: 1.6;
+}
+
+p:hover, small:hover, .head:hover, footer:hover{
+	color:rgb(229, 63, 63);
+}
+
+small {
+	margin-top: 1rem;
+}
+
+.head {
+	padding: 1rem;
+	padding-bottom: 2rem;
+	color:#fff;
+	background: gold;
+	border-radius: 20px;
+	margin-bottom: 1.5rem;
+}
+
+h1 img {
+	margin-bottom: -1.2rem;;
+}
+

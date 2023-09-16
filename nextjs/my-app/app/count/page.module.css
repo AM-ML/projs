@@ -1,0 +1,22 @@
+.main {
+      width: 100%;
+      height: 100vh;
+}
+
+.display {
+      color: #fff;
+      display: block;
+      text-align: center;
+}
+
+.handle {
+      
+}
+
+.span *{
+      color: #fff !important;
+}
+
+.span {
+      background-color: #333;
+}

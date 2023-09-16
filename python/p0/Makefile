@@ -1,0 +1,2 @@
+all:
+	python p.py

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<title>AMC</title>
+		<link rel="stylesheet" href="design.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="../src/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../src/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../src/favicon-16x16.png">
+		<link rel="manifest" href="../src/site.webmanifest">
+	</head>
+<body>
+
+<div class="container mt-3">
+	<form>
+		<div class="input-group form-floating">
+			<div class="input-group-text">$</div>
+			<input id="email" type="text" class="form-control rounded-3" placeholder="Email" autofocus autocomplete="off" />
+		
+			<label for="email" class="form-label ms-5">Email</label>
+		</div>
+		<div class="form-floating mt-1">
+			<input type="text" id="pass"
+			type="password" class="form-control rounded-3" placeholder="Password" />
+
+			<label for="pass" class="form-label">Password</label>
+		</div>
+
+		<label for="range" class="form-label holder text-center d-block">50</label>
+		<input type="range" name="range" id="range" class="form-range" oninput="que()">
+
+
+	</form>
+</div>
+
+
+<div class="container mt-5">
+	<form>
+		<div class="form-check form-check-inline">
+			<input type="checkbox" name="check" id="check" class="form-check-inline form-check-input">
+			<label for="check" class="form-check-label">Food</label>
+		</div>
+		<div class="form-check form-check-inline form-switch">
+
+			<input type="radio" name="check" id="fem" class="form-check-input form-check-inline">
+			<label for="fem" class="form-check-label">Hot Drinks</label>
+		</div>
+		<div class="form-check form-check-inline form-switch">
+
+			<input type="radio" name="check" id="cold" class="form-check-input form-check-inline">
+			<label for="cold" class="form-check-label">Cold Drinks</label>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	 
+</div>
+
+
+<div class="container mt-5">
+	<form>
+		<label for="amt" class="form-label">Amount</label>
+		<div class="input-group">
+			<div class="input-group-text">$</div>
+			<input type="number" name="amt" id="amt" class="form-control" placeholder="amount" />
+			<i class="pt-2 fas fa-motorcycle" style="margin-left: -2rem;z-index: 2;"></i>
+			
+		</div>
+	</form>
+</div>
+
+<script
+	src="https://kit.fontawesome.com/29d3732e2d.js"
+	crossorigin="anonymous"
+></script>
+<script src="../includes/nav.js">
+</script><script src="../includes/fade.js">
+</script><script src="script.js">
+</script></body></html>

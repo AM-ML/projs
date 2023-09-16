@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&display=swap');
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 30px;
+}
+body{
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+	font-family: "Segoe UI emoji";
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+.author{
+	color: darkslategray;
+	margin-top: -40px;
+	font-family: 'Playfair Display', serif;
+}
+.blog{
+	position: relative;
+	background-color: #cff;
+	margin: 20px;
+	zoom: 0.9;
+	border-radius: 15px;
+	box-shadow: 2px 2px 2px #fbb;
+	font-family: sans-serif;
+}
+.id{
+	position: absolute;
+	top: 0;
+	padding: 30px;
+	padding-bottom: 20px;
+	left: 0	;
+	color: #5f5f5f;
+	font-weight: bold;
+	height: 60px;
+	width: 30px;
+ 
+}
+.title{
+	text-shadow: 0.1px 0.1px 0.1px white;
+	text-align: center;
+	font-family: 'Montserrat', serif;
+}
+.body{
+	text-align: justify;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-icon {
+  padding: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-icon i {
+  font-size: 18px;
+}
+
+.icon{
+	margin-left: -70px;
+	margin-bottom: -170px;
+
+}
+
+.search{
+	border-radius: 50px !important;
+	margin-left: -110px;
+}

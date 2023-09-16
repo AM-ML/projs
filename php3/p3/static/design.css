@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 30px;
+}
+body{
+	color: #F1F1F1;
+	background-color: #0F0F0F;
+	font-family: "jetbrains mono";
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}

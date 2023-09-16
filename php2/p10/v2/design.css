@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+/* 	padding: 30px; */
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1{
+	margin-left:-60px;
+}
+
+body{
+	display: inline;
+	zoom: 0.65;
+	color: #F1F1F1;
+	background-color: #0F0F0F;
+	font-family: "jetbrains mono";
+}
+.form-control{
+	display: block;
+	width: 30.5%;
+	margin: 20px;
+	text-align: center;
+}
+form{
+	margin: 20px;
+}
+button{
+	margin-left: 76vh;
+}
+textarea{
+	outline: none;
+	border: 0.5px solid aqua;
+	display: block;
+	margin-left: 20vh;
+}
+
+label{
+	zoom: 2;
+}
+#female{
+	margin-left: 10vh;
+}
+#male{
+	margin-left: 11.2vh;
+}
+#male, #female{
+	zoom: 2;
+}
+input{
+	zoom: 1.1;
+}

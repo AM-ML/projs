@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 30px;
+}
+body{
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+	font-family: "League Spartan", "Segoe UI Emoji", sans-serif;
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+label{
+	margin-left: -30px;
+	user-select: none;
+	-webkit-user-select: none; /* For Safari */
+	-moz-user-select: none; /* For Firefox */
+	-ms-user-select: none; /* For IE/Edge */
+}

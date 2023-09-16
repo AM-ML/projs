@@ -1,0 +1,22 @@
+
+.title {
+      color: whitesmoke;
+}
+
+.output {
+      color: whitesmoke;
+}
+
+.main {
+      width: 100vw;
+      height: 100vh;
+      background: #000; 
+}    
+
+.success {
+      color: springgreen;
+}
+
+.fail {
+      color: rgb(185, 83, 83);
+}

@@ -1,0 +1,312 @@
+/* TEMPLATE */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+	font-family: "League Spartan", sans-serif;
+}
+.block{
+	display: block;
+
+}
+.center{
+	text-align: center;
+}
+
+/* TEMPLATE */
+
+/** VIEW BLOGS SECTION DESIGN */
+
+#view {
+	margin: 10px auto;
+}
+.view-sec-title {
+	width: 40%;
+	display: block;
+}
+
+.view-sec-headers {
+	display: flex;
+	flex-direction: row;
+	width:80%;
+}
+
+.view-sec-search{
+	margin-right: -2.5rem;
+}
+
+.view-btn {
+	width: 3rem;
+	height: 2.5rem;
+}
+
+.viewBlog {
+	margin: 2rem;
+	padding: 2rem;
+	position: relative;
+	border-radius: 10px;
+	background-color: #fff;
+	border: 1px double black;
+}
+
+.viewID {
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	position: absolute;
+}
+
+.viewTitle {
+	display: block;
+}
+
+.viewBody {
+	margin: 2rem;
+}
+
+.viewAuthor {
+	display: block;
+}
+
+/*? VIEW BLOGS SECTION DESIGN */
+
+/** INSERT BLOG SECTION DESIGN */
+
+
+
+.insert-form {
+	padding: 3rem;
+	border-radius: 2rem;
+	border: 5px double black;
+	background-color: #fff !important;
+}
+
+.insert-title {
+	display: flex;
+	justify-content: flex-start;
+	height: 3rem;
+	line-height: 1.2;
+}
+
+.insert-form * {
+	border-radius: 1rem;
+}
+.insert-body {
+	margin-top: 2rem;
+}
+
+.insert-author {
+	max-width: 50%;
+	margin-top: 1rem;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.insert-header {
+	margin-top: -3rem;
+}
+
+.insert-submit {
+	display: block;
+	width: 7rem;
+	line-height: 0.7;
+	margin: 10px auto;
+}
+
+
+/*? INSERT BLOG SECTION DESIGN */
+
+
+/** UPDATE BLOG SECTION DESIGN */
+
+.update-blog {
+	margin: 1rem;
+	padding: 4rem;
+	position: relative;
+	border-radius: 1.5rem;
+	border: 1px solid black;
+	background: #ffff !important;
+}
+
+.update-btn {
+	top: 0;
+	left: 0;
+	margin: .2rem;
+	padding: .5rem;
+	position: absolute;
+	border-radius: 1.5rem 0 1.5rem 0;
+}
+
+.update-editbtn {
+	top: 0;
+	right: 0;
+	width: 5rem;
+	margin: .2rem;
+	padding: .5rem;
+	position: absolute;
+	border-radius: 0 1.5rem 0 1.5rem;
+}
+
+.update-id-text {
+	color: #333f;
+}
+.update-title, .update-title:active, .update-title:focus {
+	color: #ffff;
+	caret-color: #18f;
+	background: #333f !important;
+	border-radius: 20px;
+}
+
+.disabled {
+	user-select: none;
+	pointer-events: none;
+	cursor: not-allowed !important;
+	filter: brightness(0.9) !important;
+}
+
+.update-search-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.update-search-container div {
+	display: inline-block;
+	align-items: center;
+}
+
+.update-search-container div input {
+	width: 100%;
+	display: inline !important;
+	margin-top: 1.3rem;
+}
+
+.update-seach-btn {
+	display: inline-block !important;
+}
+/*? UPDATE BLOG SECTION DESIGN */
+
+
+
+/** DELETE BLOG SECTION DESIGN */
+
+
+.del-holder {
+	background: #fff;
+	padding: 2rem 2rem 2rem 2rem;
+}
+
+.del-holder, .del-blog {
+	border-radius: 2rem;
+	border: 1px solid #18f;
+}
+
+.del-blog {
+	padding: 2em;
+	margin: 2rem 0;
+	position: relative;
+}
+
+.del-heading {
+
+}
+
+.del-title {
+	
+}
+
+.del-btn {
+	top: 0;
+	right: 0;
+	margin: 0.1rem;
+	position: absolute;
+	border-radius: 0 2rem 0 2rem;
+}
+
+.del-id {
+	top: -1rem;
+	left: -1.8rem;
+	color: #fff;
+	border-radius: 2rem 0 2rem 0;
+	padding: 1rem;
+	background: #18f;
+	position:relative;
+}
+
+.del-heading {
+	display: inline-flex;
+	flex-direction: row;
+}
+.del-search * {
+	display: inline-block;
+}
+
+.del-search div * {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.del-search {
+	
+}
+
+.del-header {
+	width: 60%;
+	justify-content: end;
+	text-align: end;
+}
+
+.del-search div{
+	display: inline-block;
+	align-items: center;
+}
+
+.del-search-btn {
+	display: inline-block;
+	text-align: start;
+	align-items: start;
+	justify-content: start;
+	margin-top: -3.8rem;
+}
+
+.del-input {
+	display: inline-block;
+	width: 20ch;
+}
+
+
+/*? DELETE BLOG SECTION DESIGN */
+
+
+/** ABOUT COMP SECTION DESIGN */
+
+
+#about {
+	padding: 1rem;
+	border-radius: 2rem;
+	background-color: #18f;
+	border: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+.about-par {
+	margin: 1rem;
+	color: #18f;
+	padding: 1rem 1rem;
+	border-radius: 2rem;
+	background-color: #333;
+	border: 5px solid rgba(calc(255 / 16), calc(255 / (16 / 8)), calc(255 / (16 / 16) ), 0.5);
+}
+
+.about-par:hover {
+	zoom: 1.01;
+	color: #2af;
+}
+/*? ABOUT COMP SECTION DESIGN */

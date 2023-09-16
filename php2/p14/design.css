@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 30px;
+}
+h1{
+	margin-left:-60px;
+}
+
+body{
+	color: #F1F1F1;
+	background-color: #0F0F0F;
+	font-family: "jetbrains mono";
+}
+.form-control{
+	display: inline;
+	width: 44%;
+	margin: 20px;
+}
+.link{
+	display: block;
+}

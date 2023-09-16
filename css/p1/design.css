@@ -1,0 +1,32 @@
+/* TEMPLATE */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 30px;
+}
+body{
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+	font-family: "League Spartan", "Segoe UI Emoji", sans-serif;
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+/* TEMPLATE */
+
+p {
+	font-size: 64px;  /* font size as in every character takes up x amount of unit*/
+	color: springgreen; 
+	/* apply color, either rgb(), rgba() a for opacity #hex  or basic name of color*/
+	background-color: red;
+	/* apply back color of the element */
+	text-align: center;
+	/* centers the inner text of the element */
+}
+div{
+	background-color: aqua;
+}

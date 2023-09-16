@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 30px;
+	font-family: "League Spartan", sans-serif;
+
+}
+body{
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+label[for="male"], label[for="female"], label[for="all"]{
+	margin-left: -30px ;
+	width: 40%;
+}
+input[name="gender"]{
+	margin-left: -10px ;
+
+}
+
+.gender{
+	border-radius: 70px;
+/* 	background-color: #041F2C; */
+	color: black;
+	text-shadow: 0.2px 0.2px 0.2px black;
+	width: 300px;
+	text-align: center;
+	margin: 10px auto ;
+	margin-bottom: -300px;
+	margin-left: 780px;
+	font-family: 'League Spartan', sans-serif;
+}
+.cover{
+	background-color: rgb(200, 200, 200);
+	margin-bottom: -100px;
+	height: 20px;
+	border-radius: 60px;	
+}
+.gen-container{
+	margin-bottom: -55px;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-icon {
+  padding: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-icon i {
+  font-size: 18px;
+}
+
+.icon{
+	margin-left: -70px;
+	margin-bottom: -170px;
+
+}
+
+.search{
+	border-radius: 50px !important;
+	margin-bottom: -170px;
+	margin-left: -110px;
+}

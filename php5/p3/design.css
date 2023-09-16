@@ -1,0 +1,45 @@
+/* TEMPLATE */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+	font-family: "League Spartan", sans-serif;
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+/* TEMPLATE */
+
+
+.row .col:nth-child(2){
+	background-color: springgreen;
+}
+.row .col:nth-child(1){
+	background-color: rgb(196, 110, 110);
+}
+.row .col:nth-child(3){
+	background-color: #18f;
+}
+
+.row .col:nth-child(4){
+	background-color: rgb(255, 255, 174);
+}
+.row .col:nth-child(5){
+	background-color: rgb(133, 225, 225);
+}
+
+.row .col:nth-child(7){
+	background-color: black;
+	color:#fff;
+}
+.col:hover {
+	background: #5fc3 !important;
+}

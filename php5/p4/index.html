@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>AMC</title>
+    <link rel="stylesheet" href="design.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../src/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../src/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../src/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../src/site.webmanifest" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <fieldset class="border border-dark p-3 m-3 shadow">
+          <legend>Create New Student</legend>
+          <div class="form-floating">
+            <input
+              type="text"
+              name="stdName"
+              id="stdName"
+              placeholder="Student Name"
+              class="form-control"
+              autocomplete="off"
+              autofocus
+            />
+
+            <label for="stdName">Student Name</label>
+          </div>
+          <br />
+          <div class="form-floating">
+            <input
+              type="number"
+              name="stdFees"
+              id="stdFees"
+              class="form-control"
+              placeholder="Student Fees"
+            />
+
+            <label for="stdFees">Student Fees</label>
+          </div>
+
+          <br />
+
+          <input
+            type="radio"
+            name="stdGender"
+            id="male"
+            value="M"
+            class="d-inline"
+          />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            name="stdGender"
+            id="female"
+            class="d-inline"
+            value="F"
+          />
+          <label for="female">Female</label>
+
+          <br />
+
+          <button type="submit" class="btn btn-dark ms-auto d-block">
+            Submit
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/29d3732e2d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../includes/nav.js"></script>
+    <script src="script.js"></script>
+    <script src="../includes/fade.js"></script>
+  </body>
+</html>

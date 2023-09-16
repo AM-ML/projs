@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<title>AMC</title>
+	<link rel="stylesheet" href="design.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../src/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../src/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../src/favicon-16x16.png">
+	<link rel="manifest" href="../src/site.webmanifest">
+</head>
+<body>
+
+
+	<section title="Nav Bar" class="nav">
+		<nav>
+			<li><a href="#" value="f4">View Students</a></li>
+			<li>|</li>
+			<li><a href="#" value="f2">Insert Student</a></li>
+			<li>|</li>
+			<li><a href="#" value="f3">Insert Payment</a></li>
+			<li>|</li>
+			<li><a href="#" value="f1">Delete Student</a></li>
+		</nav>
+	</section>
+
+	<section id="f1">
+		<div class="wrapper">
+			<div class="alert elemD" role="alert">
+				
+			</div>
+			<form class="form1">
+				<div class="container">
+					<h2 class="no-pad text-center">Delete Student</h2>
+
+					<select class="delselect form-select" onmousedown="creates()" required>
+						
+					</select>
+					
+					<button type="submit" class="btn btn-danger f1btn">Delete</button>
+				</div>
+			</form>
+		</div>	
+	</section>
+
+	<section id="f2">
+		<div class="wrapper">
+
+			<div class="alert alogin alert-primary" role="alert">
+				
+			</div>
+
+			<form class="form2">
+				<div class="container">
+					<h2 class="no-pad">Student Form</h2>
+
+					<input type="text" name="name" placeholder="Name" autocomplete="off" autofocus class="form-control f2name" required>
+
+					<input type="number" name="fees" placeholder="Fees" autocomplete="off" autofocus class="form-control f2fees" required>
+
+					<div class="gends container">
+						<input type="radio" name="gender" class="gender" id="male" value="M" required>
+						<label for="male">Male</label>
+
+						<input type="radio" name="gender" class="gender" id="female" value="F">
+						<label for="female">Female</label>
+					</div>
+
+					<button type="submit" class="btn btn-dark f2btn">Insert</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section id="f3">
+		<div class="display">
+				
+		</div>
+		<div class="wrapper">
+
+			<div class="alert alertP" role="alert">
+				
+			</div>
+
+			<form class="form3">
+				<div class="container">
+					<h2 class="no-pad">
+						Payment Insert
+					</h2>
+					<select class="select form-select" onmousedown="create()" onchange="getPay()">
+					</select>
+					<input type="number" name="payment" class="form-control payment" placeholder="Payment">
+					<button type="submit" class="btn btn-dark f1btn">Insert</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+
+	<section id="f4">
+		<div class="center">
+			<form onchange="data()" class="gen-form">
+				<div class="container genc center text-center gend-container">
+					<input class="gend" id="al" name="gend" type="radio" value="A" checked>
+					<label for="al">All</label>
+
+					<input class="gend" id="ml" name="gend" type="radio" value="M">
+					<label for="ml">Male</label>
+
+					<input class="gend" id="fml" name="gend" type="radio" value="F">
+					<label for="fml">Female</label>
+				</div>
+			</form>
+		</div>
+
+		<div class="wrapper">
+			<div class="container">
+				<input type="search" name="search" class="form-control search" placeholder="Search..." autofocus autocomplete="off" oninput="data()" onclick="data()" onkeyup="data()">
+			</div>
+		</div>
+		<table class="table table-light border-secondary table-bordered caption-top tbl">
+			<caption class="cap text=center"></caption>
+			<thead>
+				<tr>
+					<th class="text-end">ID</th>
+					<th class="text-start">Name</th>
+					<th class="text-center">Fees</th>
+					<th class="text-center">Payment</th>
+					<th class="text-end">Remaining</th>
+				</tr>
+			</thead>
+
+			<tbody class="tbody">
+				
+			</tbody>
+
+			<tfoot>
+				<th colspan="2" class="text-center">Total</th>
+				<th class="totalfees text-center"></th>
+				<th class="totalpayment text-center"></th>
+				<th class="totalremaining text-end"></th>
+			</tfoot>
+		</table>
+
+	</section>
+
+
+	<script src="script.js">
+	</script></body></html>

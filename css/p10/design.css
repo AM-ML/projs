@@ -1,0 +1,80 @@
+/* TEMPLATE */
+/* @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap'); */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	user-select: none;
+	zoom:1.65;
+	color: #F1F1F1;
+	text-align: center;
+	background-color: #0F0F0F;
+	font-family: "Jetbrains mono medium", sans-serif;
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+/* TEMPLATE */
+
+.container {
+	display: flex;
+	padding-top: 10vh;
+	font-size: 75px;
+	flex-direction: column;
+}
+
+.don, .clock {
+
+	display:inline;
+}
+
+.first, .last {
+	border: 1px solid white;
+	padding: 30px;
+	border-radius: 20px;
+	background: rgba(33, 33, 33, 50%);
+}
+
+.line {
+
+	width: 100%;
+/* 	margin-top: -18.3vh; */
+	background: #0F0F0F;
+	margin-top: -13.2%;
+	height:10px;
+	box-shadow: none;
+}
+
+
+.container {
+	margin-top: -70px;
+}
+
+.second {
+	zoom:0.5;
+	background: rgba(33, 33, 33, 50%);
+	display:inline;
+	margin-bottom:-15vh !important;
+	width:max-content;
+	padding: 10px;
+	padding-top: 17px;
+	margin: 0px auto;
+	border-radius: 25px;
+}
+
+.marg {
+	margin-top: 10vh !important;
+}
+
+.circ {
+	display:inline;
+	width: 1000px;
+	height: 400px;
+	background: red;
+	/* margin: 0px auto; */
+}

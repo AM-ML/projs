@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	color: #18f;
+	background-color: #0C2C34;
+	font-family: "League Spartan", "Segoe UI Emoji", sans-serif;
+}
+
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+
+li a {
+	zoom: 2.2;
+	color: #4fffff;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 15px;
+	text-decoration: none;
+	background-color: #1f8fff04;
+}
+
+li a:hover {
+	color: #18f;
+}
+
+nav {
+	zoom: 0.6;
+	height: 10%;
+	margin: 20px;
+	padding: 10px;
+	display: flex;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	align-items: center;
+	flex-direction: coumn;
+	background-color: #0A1A22;
+	border: 3px solid #18f;
+	justify-content: space-around;
+}
+
+nav li {
+	list-style: none;
+}
+
+/* TEMPLATE */
+
+
+.subparent {
+	margin: 20px;
+	padding: 20px;
+	border-radius: 20px;
+	display: inline-block;
+	background-color: #023;
+	border: 3px solid gold;
+}
+
+.heading {
+	color: gold;
+	text-indent: 10px;
+}
+
+.paragraph {
+	color: gold;
+	font-size: 20px;
+	font-weight: 600;
+	text-indent: 40px;
+}
+
+.home , section div:first-child{
+	margin-left: 5%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+svg {
+	display: inline;
+	margin-bottom: 15px;
+}
+
+.home-lg {
+	display: inline-block;
+}
+
+.fact {
+	color: aqua;
+	display: flex;
+	padding: 10px;
+	text-align: center;
+	border-radius: 40px;
+	flex-direction: column;
+	border: 3px solid #18f;
+	background-color: #0A1A22;
+	font-family: "League Spartan";
+}
+.fact h1{
+	font-size: 20px;
+}

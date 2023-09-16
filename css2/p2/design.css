@@ -1,0 +1,92 @@
+/* TEMPLATE */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	color: whitesmoke;
+	background: #191818;
+	font-family: "League Spartan", sans-serif;
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+/* TEMPLATE */
+
+.wrapper {
+	display: flex;
+	min-width: 75%;
+	max-width: 75%; 
+	overflow-x: auto;
+	margin-left: 2rem;
+	position: relative;
+	margin-bottom: 2rem;
+	flex-direction: row;
+	white-space: nowrap;
+	background-color: #2e2d2d;
+	box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.5), inset 10px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.item {
+	z-index: 1;
+	padding: 2rem;
+	position: relative;
+	background: #2227;
+	display: inline-block;
+	margin: 1.67rem 1rem 1.6rem 1rem;
+}
+
+.img {
+	/* background-image: url('../img/alKabeer300x400.png'); */
+	width: 120px;
+	height: calc(160px * 0.8);
+	background-size: 100% 100%;
+	border: 5px solid rgba(0, 0, 0, 0.3);
+	
+}
+
+.movie-title {
+	display: flex;
+	font-size: 1.34rem;
+	flex-direction: row;
+	font-family: fantasy;
+	justify-content: center;
+}
+
+.title1 {
+	position:relative;
+	margin: 1rem;
+	/* margin-bottom: -3rem; */
+}
+
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px ;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	width: 2px;
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(140, 158, 175);
+	border-radius: 20rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.guess {
+	color: rgb(255, 0, 0);
+}

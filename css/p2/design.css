@@ -1,0 +1,75 @@
+/* TEMPLATE */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{ 
+	border: 2px solid lime;
+	margin: 0;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+body {
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+	font-family: "League Spartan", "Segoe UI Emoji", sans-serif;
+}
+
+.block {
+	display: block;
+}
+
+.center {
+	text-align: center;
+}
+/* TEMPLATE */
+
+div {
+	position: relative;
+	margin-bottom: 20px;
+	border-radius: 34px;
+	background-color: darkgray;
+	box-shadow: 4px 4px 4px black;
+}
+
+p {	
+	color: white;
+	font-size: 50px;
+	user-select: none;
+	text-align: center;
+	border-radius: 34px;
+	background-color: gray;
+	box-shadow: 4px 4px 4px black;
+	text-shadow: 2px 2px 2px black;
+}
+
+p:hover {
+	color: #E0E0E0;
+	background-color: dimgray;
+}
+
+h1 {
+	color: #F1F1F1;
+	user-select: none;
+	text-align: center;
+	border-radius: 34px;
+	margin-bottom: 20px;
+	background-color: gray;
+	box-shadow: 4px 4px 4px black;
+	text-shadow: 2px 2px 2px black;
+}
+
+span {
+	top: 0;
+	left: 0;
+	zoom: 0.4;
+	color: white;
+	font-size: 50px;
+	position: absolute;
+	border-radius: 54px;
+	background-color: red;
+}
+
+span:hover {
+	color: #E0E0E0;
+	user-select: none;
+	background-color: #F32;
+}

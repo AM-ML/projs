@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 30px;
+}
+body{
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+	font-family: "Segoe UI emoji";
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}

@@ -1,0 +1,104 @@
+/* TEMPLATE */
+/* @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap'); */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	color: #0F0F0F;
+	font-family: fantasy;
+	letter-spacing: 0.05rem;
+	background-color: #F1F1F1;
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+/* TEMPLATE */
+
+header, main {
+	margin:3rem;
+	padding: 1em;
+	outline-offset: 0.25rem;
+	border:2px solid blue;
+	outline:2px solid ;
+}
+
+header h1 {
+	padding: 1em;
+	line-height: 1.6;
+	border: 2px solid;
+	outline:2px solid red;
+	outline-offset: 0.25rem;
+	text-decoration: overline underline;
+}
+
+.container {
+	width: 100%;
+	padding: 1em;
+	line-height: 1.5;
+	text-align: start;
+	font-weight: bolder;
+	outline-offset: 0.25rem;
+	border: 2px solid blue;
+	outline: 2px solid red;
+	font-family: 'Courier New', courier, monospace, sans-serif;
+}
+
+p {
+	width: 40ch;
+	text-align: start;
+}
+
+
+.circle {
+	width: 100px;
+	min-height: 100px;
+	margin: 30px auto;
+	border: 3px solid;
+	border-radius: 50%;
+	outline-offset: 2px;
+	background: rgb(51, 167, 167);
+	/* outline: 2px solid purple; */
+	box-shadow: 5px 1px 2px black;
+}
+
+.circle:hover {
+	filter: brightness(0.75);
+}
+
+.circle:active {
+	scale: 1.01;
+}
+
+.press-area {
+	width: 80%;
+	margin:20px auto;
+	margin-top: 20px;
+	margin-left: 10%;
+	user-select: none;
+	align-items: center;
+	border-radius: 20px;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.press-area h1 {
+	display: none;
+	font-size: 2.5rem;
+	color: rgb(255, 86, 86);
+	text-shadow: 1px 1px 1px white;
+}
+
+.delayed-area {
+	background-color: #0F0F0F;
+}
+.delayed-alert {
+	display: block;
+}
+.delayed-circle {
+	box-shadow: 5px 1px 2px white;
+}

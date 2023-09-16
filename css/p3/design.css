@@ -1,0 +1,62 @@
+/* TEMPLATE */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 30px;
+}
+body{
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+	font-family: "League Spartan", "Segoe UI Emoji", sans-serif;
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+/* TEMPLATE */
+
+abbr {
+	user-select: none;
+}
+nav {
+  padding: 10px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+nav li {
+	list-style: none;
+	padding: 0px;
+}
+
+a {
+	color: #823;
+}
+a:visited {
+	color: #823;
+}
+a:hover, a:active {
+	color: #222;
+}
+
+.block{
+	display: block;
+}
+.none {
+	display: none;
+}
+.inline {
+	display: flex;
+}
+.vr {
+    width:1%;
+	zoom: 0.2;
+    height: 3000px;
+    background-color: black;
+}
+body {
+	background-image: url("src/wp.png");
+}

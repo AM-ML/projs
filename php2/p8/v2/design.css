@@ -1,0 +1,16 @@
+body{
+	color: antiquewhite;
+	background-color: darkslategray;
+	font-family: "jetbrains mono";
+}
+.form-control{
+	display: inline;
+	width: 36%;
+	margin: 20px;
+}
+body a{
+	text-align: center;
+	display: block;
+	margin-right: 100px;
+	margin-top: 50px;
+}

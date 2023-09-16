@@ -1,0 +1,16 @@
+*{
+	margin: 20px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	color: #F1F1F1;
+	background-color: #0F0F0F;
+	font-family: "jetbrains mono";
+}
+.form-control{
+	display: inline;
+	width: 36%;
+	margin: 20px;
+}

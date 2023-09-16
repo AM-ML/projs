@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<title>AMC</title>
+		<link rel="stylesheet" href="static/design.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="../src/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../src/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../src/favicon-16x16.png">
+		<link rel="manifest" href="../src/site.webmanifest">
+	</head>
+<body>
+
+
+<form onchange="load()" class="gender">
+	<div class="cover"></div>
+	<div class="gen-container">
+		<input type="radio" name="gender" id="all" value="A" checked>
+		<label class="radio-container" for="all">All</label>
+		<input type="radio" name="gender" id="male" value="M">
+		<label class="radio-container" for="male">Male</label>
+		<input type="radio" name="gender" id="female" value="F">
+		<label class="radio-container" for="female">Female</label>
+	</div>
+</form>
+
+ <div class="container mt-5">
+    <div class="row justify-content-start">
+      <div class="col-md-6">
+      	<div class="search-form">
+          <input type="text" class="search-input search" placeholder="Search..." onkeyup="load()"><i class="fas  icon fa-search"></i>
+         </div>
+      </div>
+    </div>
+ </div>
+<table class="table table-bordered table-info border-secondary table-striped caption-top">
+	<caption class="cap center"></caption>
+	<thead>
+		<tr>
+			<th class="text-end">ID</th>
+			<th class="text-start">Name</th>
+			<th>Gender</th>
+			<th class="text-center">Fees</th>
+			<th class="text-center">Payment</th>
+			<th class="text-end">Remaining</th>
+		</tr>
+	</thead>
+	<tbody class="tbody">
+		
+	</tbody>
+	<tfoot>
+		<th colspan="3" class="text-center">Total</th>
+		<th class="fees text-center"></th>
+		<th class="pay text-center"></th>
+		<th class="rem text-end"></th>
+	</tfoot>
+</table>
+
+
+<script src="https://kit.fontawesome.com/29d3732e2d.js" crossorigin="anonymous"></script>
+<script src="script.js">
+</script></body></html>
