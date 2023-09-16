@@ -1,0 +1,122 @@
+/* TEMPLATE */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+body{
+	color: #0F0F0F;
+	background-color: #F1F1F1;
+	font-family: "League Spartan", sans-serif !important;
+}
+/* TEMPLATE */
+
+.link-light {
+	color: #E5E5E5 !important;
+	padding: 1rem 0 1rem 0rem;
+	margin: 0 1rem;
+}
+.link-light:hover {
+	color: #FFF !important;
+	transition: 0.2s;
+}
+.link-active,
+.link-light:hover,
+.link-light:active {
+	padding-bottom: 0.9rem !important;
+}
+.link-active{
+	border-bottom: 1px solid white !important;
+}
+.wrapper {
+	position: relative !important;
+}
+
+section {
+	margin-left: 7vmax;
+}
+
+/* Style for the side navbar */
+.sidenav {
+    top: 0;
+    right: 0;
+    width: 0;
+    z-index: 1;
+    height: 100%;
+    transition: 0.3s;
+    padding-top: 60px;
+	overflow: visible;
+    background-color: #0C2C34;
+	position: fixed !important;
+	box-shadow: -5px 0px 5px black;
+}
+
+.sidenav a {
+	border-top: 2px solid gray;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #E5E5E5;
+    display: block;
+    transition: 0.3s;
+	text-align: center;
+}
+
+.navbar {
+	background-color: #0C2C34;
+}
+
+.sidenav a:hover {
+	color: #FFF;
+}
+
+.sidenav a:last-child {
+	border-bottom: 2px solid gray;
+}
+
+/* Style for the close button */
+.closebtn {
+	border: none !important;
+	margin-top: 20%;
+	display: block;
+	zoom: 1.4;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.fa-bars {
+	zoom: 1.5;
+
+}
+
+.top {
+	margin-top: 28%;
+}
+.unimportant {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.unimportant a {
+	padding: 0;
+	color: gray;
+	font-size: 0.67rem;
+	text-align: center;
+	border : none !important;
+	display: inline !important;
+}
+
+.sm {
+	font-size: 0.5rem !important;
+}
+
+.sidenav .unimportant:last-child {
+	margin-top: 0 !important;
+}

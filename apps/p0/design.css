@@ -18,3 +18,18 @@ body{
 }
 /* TEMPLATE */
 
+
+.link-light {
+	color: #E5E5E5;
+	padding: 1rem 0 1rem 0rem;
+	margin: 0 1rem;
+}
+.link-light:hover {
+	color: #FFF;
+}
+.link-active,
+.link-light:hover,
+.link-light:active {
+	border-bottom: 1px solid white;
+	padding: 0.9rem 0 0.9rem 0;
+}

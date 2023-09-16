@@ -12,6 +12,10 @@ function listen() {
 				return false;
 			rm();
 			document.querySelector(val).style.display="block";
+			document.querySelectorAll("a").forEach(allElem => {
+				allElem.classList.remove("link-active");
+			});
+			ahref.classList.add("link-active");
 		});
 	})
 }

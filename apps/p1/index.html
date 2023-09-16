@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AMC</title>
+    <link rel="stylesheet" href="design.css" />
+    <link rel="manifest" href="../src/site.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../src/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../src/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../src/favicon-16x16.png"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <nav class="navbar navbar-expand p-2 sticky-top rounded-3 text-white">
+          <ul class="navbar-nav">
+            <div class="navbar-brand p-0 m-0">
+              <img
+                src="../src/android-chrome-192x192.png"
+                alt="Logo"
+                width="30"
+                class="mb-1"
+              />
+              <a href="#" class="text-decoration-none p-0 pe-5 m-0 link-light"
+                ><h6 class="d-inline">AMC</h6></a
+              >
+            </div>
+            <li class="nav-item">
+              <a
+                href="#"
+                value="#home"
+                class="nav-link link-light active click"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" value="#about" class="nav-link link-light active">
+                Insert
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" value="#contact" class="nav-link link-light active">
+                Delete
+              </a>
+            </li>
+          </ul>
+          <!-- Navbar nav list -->
+          <i
+            class="fas fa-bars h-100 p-0 m-0 ms-auto"
+            type="button"
+            onclick="openNav()"
+          >
+          </i>
+        </nav>
+        <!-- NavBar -->
+      </div>
+      <!-- Nav Container -->
+    </div>
+    <!-- Nav Wrapper -->
+
+    <div id="sideNav" class="sidenav position-fixed">
+      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" value="#feesSection" class="top">Insert Fees</a>
+      <a href="#" value="#paymentSection">Insert Payment</a>
+      <a href="#" value="#about" style="border-bottom: 2px solid gray">About</a>
+      <div class="unimportant">
+        <a href="mailto:softengineer@outlook.com">Contact Us</a>
+        <small>&nbsp;|&nbsp;</small>
+        <a href="#" onclick="">Logout</a>
+      </div>
+      <div class="unimportant">
+        <a href="#" class="sm">Copyright&copy;AM 2022</a>
+      </div>
+    </div>
+    <!-- Side Navbar -->
+
+    <button
+      type="button"
+      class="btn btn-primary d-none openLoginForm"
+      data-bs-toggle="modal"
+      data-bs-target="#loginModal"
+    >
+      Open Login Modal
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary d-none openRegisterForm"
+      data-bs-toggle="modal"
+      data-bs-target="#registerModel"
+    >
+      Open Register Modal
+    </button>
+
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="registerFormLabel"
+      aria-hidden="true"
+    >
+      <form class="registerForm">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registerFormLabel">Register</h5>
+              <button
+                type="button"
+                class="btn-close d-none closeRegisterForm"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Add your login form here -->
+              <!-- Input fields for username and password -->
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  name="username"
+                  autocomplete="off"
+                  spellcheck="false"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <!-- Add any other login form elements -->
+            </div>
+            <div class="modal-footer row">
+              <div class="col" style="text-indent: 10px">
+                <a
+                  href="#"
+                  onclick="$('#registerModal').modal('hide'); $('#loginModal').modal('show')"
+                  >Log In</a
+                >
+              </div>
+
+              <div class="col text-end">
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <form class="loginForm">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login</h5>
+              <button
+                type="button"
+                class="btn-close d-none closeLoginForm"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Add your login form here -->
+              <!-- Input fields for username and password -->
+              <div class="mb-3">
+                <label for="username2" class="form-label">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username2"
+                  name="username"
+                  autocomplete="off"
+                  spellcheck="false"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password2" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password2"
+                  name="password"
+                />
+              </div>
+              <!-- Add any other login form elements -->
+            </div>
+            <div class="modal-footer row">
+              <div class="col" style="text-indent: 10px">
+                <a
+                  href="#"
+                  onclick="$('#loginModal').modal('hide');$('#registerModal').modal('show')"
+                  class="text-decoration-none"
+                  >Sign Up</a
+                >
+              </div>
+
+              <div class="col text-end">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <section id="home"></section>
+
+    <section id="about">About</section>
+
+    <script
+      src="https://kit.fontawesome.com/29d3732e2d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../includes/nav.js"></script>
+    <script src="../includes/fade.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
