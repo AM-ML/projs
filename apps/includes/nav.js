@@ -19,3 +19,16 @@ function listen() {
 		});
 	})
 }
+
+ftch = async (name, body)  => {
+    let resp = await fetch(name, {
+        headers: {
+            "Content-Type": "application/json"
+        },
+        method: "POST",
+        body: body
+    })
+
+    resp = await resp.json();
+    return resp;
+}

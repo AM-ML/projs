@@ -54,19 +54,20 @@
               <a
                 href="#"
                 value="#home"
+                onclick="load()"
                 class="nav-link link-light active click"
               >
                 Home
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" value="#about" class="nav-link link-light active">
-                Insert
+              <a href="#" value="#create" class="nav-link link-light active">
+                Create Std
               </a>
             </li>
             <li class="nav-item">
               <a href="#" value="#contact" class="nav-link link-light active">
-                Delete
+                Delete Std
               </a>
             </li>
           </ul>
@@ -86,8 +87,7 @@
 
     <div id="sideNav" class="sidenav position-fixed">
       <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#" value="#feesSection" class="top">Insert Fees</a>
-      <a href="#" value="#paymentSection">Insert Payment</a>
+      <a href="#" value="#feeSec" class="top">Insert Fees</a>
       <a href="#" value="#about" style="border-bottom: 2px solid gray">About</a>
       <div class="unimportant">
         <a href="mailto:softengineer@outlook.com">Contact Us</a>
@@ -245,34 +245,70 @@
 		<div class="container mt-3 d-block m-auto text-center">
 			<div class="row align-items-center">
 				<div class="col-4">
-					<input type="text" placeholder="Search" name="search" id="search" autocomplete="off" class="shadow rounded-pill form-control">
+					<input type="search" placeholder="Search" oninput="load()" name="search" id="search" autocomplete="off" class="shadow search rounded-pill form-control">
 				</div>
-				<div class="col-6 text-end">
+				<div class="col-4 text-end">
 					<h1>View Students</h1>
 				</div>
+        <div class="col-2 text-start">
+          <form onchange="load()" class="d-flex flex-column">
+            <div>
+              <input type="radio" name="gender" checked id="all" value="A" class="d-inline">
+              <label for="all" class="d-inline">All</label>
+            </div>
+
+            <div>
+              <input type="radio" name="gender" id="smale" value="M" class="d-inline">
+              <label for="smale" class="d-inline">Male</label>
+            </div>
+
+            <div>
+              <input type="radio" name="gender" id="sfemale" value="F" class="d-inline">
+              <label for="sfemale" class="d-inline">Female</label>
+            </div>
+          </form>
+        </div>
 			</div>
-			<div class="container">
-				<div class="container row mt-3 py-2">
-					<div class="col-2 border-top border-start border-dark text-center bg-warning text-light border-bottom border-end pe-2">Name :</div>
-					<div class="col-8  text-start border-top border-dark border-bottom">Abcdefg</div>
-					<div class="col-2 bg-warning text-end border-top border-end border-dark text-light">123-456-789 M</div>
-					<div class="col-2 border-start border-dark  text-center bg-warning text-light border-bottom border-end pe-2">Payed :</div>
-					<div class="col-10 border-end border-dark text-start border-bottom">$ 12,456.0</div>
-					<div class="col-2 border-start border-bottom border-dark  text-center bg-warning text-light border-end pe-2">Fees &nbsp;&nbsp;:</div>
-					<div class="col-10 border-bottom border-end border-dark text-start">$ 42,340.0</div>
-				</div>
-				<div class="container row mt-3 py-2">
-					<div class="col-1 border-top border-start border-dark text-start">Name:</div>
-					<div class="col-9  text-start border-top border-dark">Abcdefg</div>
-					<div class="col-2 bg-warning text-end border-top border-end border-dark">123-456-789 M</div>
-					<div class="col-1 border-start border-dark  text-start">Payment:</div>
-					<div class="col-11 border-end border-dark text-start">$ 12,456.0</div>
-					<div class="col-1 border-start border-bottom border-dark  text-start">Fees:</div>
-					<div class="col-11 border-bottom border-end border-dark text-start">$ 42,340.0</div>
-				</div>
+			<div class="container std-Container">
+				
 			</div>
 		</div>
 	</section>
+
+
+	<section id="create">
+		<div class="container mt-3 m-auto w-75">
+			<form class="form createForm">
+				<fieldset class="p-5 border border-dark">
+					<legend style="all: initial; font-family: 'League Spartan';">Create New Student</legend>
+
+					<div class="form-floating">
+						<input type="text" class="form-control" name="name" autocomplete="off" id="stdName" placeholder="Student Name">
+						<label for="stdName">Student Name</label>
+					</div>
+					<div class="mt-2 d-inline">
+						<input type="number" name="fees" placeholder="Student Initial Fees" id="stdFees" class="form-control d-inline w-50">
+					</div>
+					<div class="form-check-inline ms-5 mt-2">
+						<input type="radio" name="gender" id="male" value="M" class="d-inline">
+						<label for="male" class="form-label d-inline">Male</label>
+
+						<input type="radio" name="gender" id="female" value="F" class="ms-2 d-inline">
+						<label for="female" class="form-label d-inline">Female</label>
+					</div>
+					<br>
+					<button type="submit" class="btn d-block btn-dark float-end">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+  <a href="#" value="#edit" class="edit-link d-none"></a>
+  <section id="edit">
+    <div class="editContainer container">
+
+    </div>
+  </section>
+
 
     <section id="about">About</section>
 
@@ -284,6 +320,9 @@
     <script src="../includes/fade.js"></script>
 	<script src="encrypt.js"></script>
 	<script src="decrypt.js"></script>
+  <script src="edit.js"></script>
+  <script src="view.js"></script>
+    <script src="insert.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

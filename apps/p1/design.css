@@ -41,6 +41,9 @@ section {
 * {
 	overflow: visible;
 }
+.mtp {
+	margin-top: 1rem !important;
+}
 
 /* Style for the side navbar */
 .sidenav {
